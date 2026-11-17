@@ -884,7 +884,7 @@ footer{padding:40px 20px 100px;text-align:center;color:var(--silver);font-size:1
     var pTxt=pases+(pases===1?' persona':' personas');
     var t='¡Hola! Respuesta a la invitación de los XV años de Joyce Marcella (sábado 9 de enero de 2027):\n\n'+
           'Nombre: '+nombre+'\n'+
-          (op.value==='si' ? '¿Asiste?: Sí, asistiré ✨\nPase para: '+pTxt : '¿Asiste?: No podré asistir. ¡Muchas felicidades!');
+          (op.value==='si' ? '¿Asiste?: Sí, asistiré ✨\nPase para: '+pTxt : '¿Asiste?: No podré asistir\nPase para: '+pTxt+'\n¡Muchas felicidades!');
     if(msgJ) t+='\nMensaje para Joyce: '+msgJ;
     var url='https://wa.me/529361224982?text='+encodeURIComponent(t);
     var w=null; try{w=window.open(url,'_blank');}catch(e){}
